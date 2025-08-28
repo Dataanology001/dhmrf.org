@@ -179,40 +179,38 @@
   </div>
 </section>
 <style>
-    .text-gradient {
-  background: linear-gradient(90deg, #00C9FF, #92FE9D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* Contact Form Input Styling */
+.contact-section .form-control, 
+.contact-section textarea {
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  padding: 12px 18px;
+  font-size: 15px;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: none;
 }
 
-.btn-gradient {
-  background: linear-gradient(90deg, #00C9FF, #92FE9D);
-  color: #fff;
-  border: none;
-  transition: 0.3s;
+/* On focus */
+.contact-section .form-control:focus,
+.contact-section textarea:focus {
+  border-color: #00C9FF;
+  box-shadow: 0 0 8px rgba(0, 201, 255, 0.3);
+  outline: none;
 }
 
-.btn-gradient:hover {
-  background: linear-gradient(90deg, #92FE9D, #00C9FF);
-  color: #fff;
+/* Placeholder color */
+.contact-section .form-control::placeholder {
+  color: #888;
+  opacity: 0.9;
 }
 
-.btn-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  background: #fff;
-  color: #00C9FF;
-  border: 2px solid #00C9FF;
-  margin-right: 8px;
-  transition: 0.3s;
-}
-
-.btn-icon:hover {
-  background: linear-gradient(90deg, #00C9FF, #92FE9D);
-  color: #fff;
+/* Button enhancement */
+.contact-section .btn-gradient {
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 16px;
 }
 
 </style>
@@ -372,5 +370,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 </html>
+
 
 

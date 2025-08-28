@@ -143,29 +143,49 @@
       </div>
 
       <!-- Contact Form -->
-      <div class="col-lg-7">
-        <div class="formlayout p-4 shadow rounded bg-white">
-          <form id="contact-form">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control rounded-pill" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control rounded-pill" placeholder="Your Email" required>
-              </div>
-              <div class="col-md-12">
-                <input type="text" class="form-control rounded-pill" placeholder="Subject" required>
-              </div>
-              <div class="col-12">
-                <textarea class="form-control rounded-4" rows="5" placeholder="Your Message" required></textarea>
-              </div>
-              <div class="col-12 text-center">
-                <button class="btn btn-gradient px-4 py-2 rounded-pill" type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
+     <div class="col-lg-7">
+  <div class="formlayout p-4 shadow rounded bg-white">
+    <form id="contact-form">
+      <div class="row g-3">
+
+        <!-- Your Name -->
+        <div class="col-md-6">
+          <input type="text" class="form-control rounded-pill" placeholder="Your Name" name="name" required>
+        </div>
+
+        <!-- Your Email -->
+        <div class="col-md-6">
+          <input type="email" class="form-control rounded-pill" placeholder="Your Email" name="email" required>
+        </div>
+
+        <!-- Organization Name -->
+        <div class="col-md-12">
+          <input type="text" class="form-control rounded-pill" placeholder="Organization Name" name="organization" required>
+        </div>
+
+        <!-- Contact Number -->
+        <div class="col-md-12">
+          <input type="tel" class="form-control rounded-pill" placeholder="Contact Number" name="phone" maxlength="10" pattern="[0-9]{10}" required>
+        </div>
+
+        <!-- Subject -->
+        <div class="col-md-12">
+          <input type="text" class="form-control rounded-pill" placeholder="Subject" name="subject" required>
+        </div>
+
+        <!-- Message -->
+        <div class="col-12">
+          <textarea class="form-control rounded-4" rows="5" placeholder="Your Message" name="message" required></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="col-12 text-center">
+          <button class="btn btn-gradient px-4 py-2 rounded-pill" type="submit">Send Message</button>
         </div>
       </div>
+    </form>
+  </div>
+</div>
 
     </div>
 
@@ -412,6 +432,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 </html>
+
 
 
 

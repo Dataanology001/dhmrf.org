@@ -20,7 +20,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
 
+<script>
+// WhatsApp Button bounce effect
+document.addEventListener("DOMContentLoaded", function () {
+  const whatsappBtn = document.getElementById("whatsappBtn");
 
+  // Add bounce animation every 10 seconds
+  setInterval(() => {
+    whatsappBtn.classList.add("animate-bounce");
+    setTimeout(() => {
+      whatsappBtn.classList.remove("animate-bounce");
+    }, 2000); // remove after animation
+  }, 10000);
+});
+</script>
 
 
 
@@ -344,12 +357,12 @@ document.addEventListener("DOMContentLoaded", function () {
   background: #1EBE5D;
 }
 
-    </style>
-    <!-- Font Awesome -->
+    <!-- WhatsApp Floating Button -->
+<!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <!-- WhatsApp Button -->
-<a href="https://wa.me/919693022023" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/919628307846" class="whatsapp-float" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -358,6 +371,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 </html>
+
 
 
 
